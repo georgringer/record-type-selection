@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- List rows -->
+  <rect x="6" y="10" width="52" height="8" rx="2" fill="#6c757d"/>
+  <rect x="6" y="22" width="52" height="8" rx="2" fill="#adb5bd"/>
+  <rect x="6" y="34" width="52" height="8" rx="2" fill="#adb5bd"/>
+  <rect x="6" y="46" width="52" height="8" rx="2" fill="#adb5bd"/>
+  <!-- Active row highlight -->
+  <rect x="6" y="22" width="52" height="8" rx="2" fill="#0d6efd" opacity="0.85"/>
+  <!-- Dropdown arrow indicator -->
+  <polygon points="44,25 52,25 48,30" fill="#fff"/>
+</svg>

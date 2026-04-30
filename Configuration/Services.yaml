@@ -1,0 +1,11 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  GeorgRinger\RecordTypeSelection\:
+    resource: '../Classes/*'
+
+  GeorgRinger\RecordTypeSelection\Backend\RecordGroup:
+    public: true

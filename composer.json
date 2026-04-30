@@ -1,0 +1,27 @@
+{
+    "name": "georgringer/record-type-selection",
+    "description": "Adds a grouped table filter dropdown to the backend list module",
+    "license": "GPL-2.0-or-later",
+    "type": "typo3-cms-extension",
+    "authors": [
+        {
+            "name": "Georg Ringer",
+            "homepage": "https://ringer.it",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-backend": "^14.0",
+        "php": ">= 8.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "GeorgRinger\\RecordTypeSelection\\": "Classes"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "record_type_selection"
+        }
+    }
+}
