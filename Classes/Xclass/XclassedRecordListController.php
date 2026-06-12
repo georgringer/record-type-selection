@@ -41,7 +41,7 @@ class XclassedRecordListController extends RecordListController
         $dropdownButton->addItem(
             $componentFactory->createDropDownRadio()
                 ->setLabel('All tables')
-                ->setHref((string)$this->uriBuilder->buildUriFromRoute('web_list', ['id' => $this->pageContext->pageId]))
+                ->setHref((string)$this->uriBuilder->buildUriFromRoute('records', ['id' => $this->pageContext->pageId]))
                 ->setActive($this->table === '')
         );
 
