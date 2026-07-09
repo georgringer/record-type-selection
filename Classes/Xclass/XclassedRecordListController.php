@@ -16,6 +16,8 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class XclassedRecordListController extends RecordListController
 {
+    private const LLL = 'LLL:EXT:record_type_selection/Resources/Private/Language/locallang.xlf:';
+
     protected function getDocHeaderButtons(ModuleTemplate $view, Clipboard $clipboard, ServerRequestInterface $request, DatabaseRecordList $dbList): void
     {
         parent::getDocHeaderButtons($view, $clipboard, $request, $dbList);
@@ -34,13 +36,13 @@ class XclassedRecordListController extends RecordListController
         $componentFactory = GeneralUtility::makeInstance(ComponentFactory::class);
 
         $dropdownButton = $componentFactory->createDropDownButton()
-            ->setLabel('Tables')
+            ->setLabel($this->getLanguageService()->sL(self::LLL . 'tables'))
             ->setShowLabelText(true)
             ->setShowActiveLabelText(true);
 
         $dropdownButton->addItem(
             $componentFactory->createDropDownRadio()
-                ->setLabel('All tables')
+                ->setLabel($this->getLanguageService()->sL(self::LLL . 'tables.all'))
                 ->setHref((string)$this->uriBuilder->buildUriFromRoute('records', ['id' => $this->pageContext->pageId]))
                 ->setActive($this->table === '')
         );

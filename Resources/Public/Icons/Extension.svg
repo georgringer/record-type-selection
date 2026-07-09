@@ -1,11 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- List rows -->
-  <rect x="6" y="10" width="52" height="8" rx="2" fill="#6c757d"/>
-  <rect x="6" y="22" width="52" height="8" rx="2" fill="#adb5bd"/>
-  <rect x="6" y="34" width="52" height="8" rx="2" fill="#adb5bd"/>
-  <rect x="6" y="46" width="52" height="8" rx="2" fill="#adb5bd"/>
-  <!-- Active row highlight -->
-  <rect x="6" y="22" width="52" height="8" rx="2" fill="#0d6efd" opacity="0.85"/>
-  <!-- Dropdown arrow indicator -->
-  <polygon points="44,25 52,25 48,30" fill="#fff"/>
+  <rect x="4" y="6" width="56" height="52" rx="8" fill="#f4f6f8"/>
+  <rect x="4" y="6" width="56" height="52" rx="8" fill="none" stroke="#d7dde3" stroke-width="2"/>
+  <!-- Group 1 -->
+  <circle cx="16" cy="19" r="3" fill="#0d6efd"/>
+  <rect x="24" y="16" width="28" height="6" rx="3" fill="#8c99a6"/>
+  <!-- Group 2 -->
+  <circle cx="16" cy="32" r="3" fill="#0d6efd"/>
+  <rect x="24" y="29" width="28" height="6" rx="3" fill="#c3ccd4"/>
+  <!-- Group 3 -->
+  <circle cx="16" cy="45" r="3" fill="#0d6efd"/>
+  <rect x="24" y="42" width="28" height="6" rx="3" fill="#c3ccd4"/>
+  <!-- Grouping / layers badge -->
+  <circle cx="49" cy="47" r="13" fill="#0d6efd"/>
+  <path d="M49 40l7 3.5-7 3.5-7-3.5z" fill="#fff"/>
+  <path d="M42 47l7 3.5 7-3.5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

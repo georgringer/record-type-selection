@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="messages" date="2026-07-09T00:00:00Z" product-name="record_type_selection">
+		<header/>
+		<body>
+			<trans-unit id="tables">
+				<source>Tables</source>
+			</trans-unit>
+			<trans-unit id="tables.all">
+				<source>All tables</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

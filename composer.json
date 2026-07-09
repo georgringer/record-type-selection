@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "typo3/cms-backend": "^14.0",
+        "typo3/cms-backend": "^14.3",
         "php": ">= 8.4"
     },
     "autoload": {
