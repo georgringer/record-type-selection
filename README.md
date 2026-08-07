@@ -10,8 +10,8 @@ When viewing a page in the records module, a "Tables" dropdown appears in the do
 
 ## Requirements
 
-- TYPO3 14.x
-- PHP 8.4+
+- TYPO3 14.3 LTS
+- PHP 8.3+
 
 ## Installation
 
