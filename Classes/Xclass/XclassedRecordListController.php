@@ -54,16 +54,17 @@ class XclassedRecordListController extends RecordListController
             );
 
             foreach ($control['items'] ?? [] as $itemTable => $item) {
-                $dropdownButton->addItem(
-                    $componentFactory->createDropDownRadio()
-                        ->setLabel($item['label'])
-                        ->setIcon($item['icon'])
-                        ->setHref((string)$this->uriBuilder->buildUriFromRoute('records', [
-                            'id' => $this->pageContext->pageId,
-                            'table' => $itemTable,
-                        ]))
-                        ->setActive($itemTable === $this->table)
-                );
+                $buttonToAdd = $componentFactory->createDropDownRadio()
+                    ->setLabel($item['label'])
+                    ->setIcon($item['icon'])
+                    ->setHref((string)$this->uriBuilder->buildUriFromRoute('records', [
+                        'id' => $this->pageContext->pageId,
+                        'table' => $itemTable,
+                    ]))
+                    ->setActive($itemTable === $this->table);
+                if ($buttonToAdd->isValid()) {
+                    $dropdownButton->addItem($buttonToAdd);
+                }
             }
         }
 
